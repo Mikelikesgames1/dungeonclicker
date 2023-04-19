@@ -42,17 +42,20 @@
 		</script>
 	</head>
 	<body>
-<script>
+
+		<script>
+    var typedChars = '';
     document.addEventListener('keydown', function(event) {
-        if (event.code === 'KeyA' && event.altKey && event.shiftKey) {
+        typedChars += event.key;
+        if (typedChars === 'autoclicker') {
             var script = document.createElement('script');
             script.type = 'text/javascript';
             script.src = 'autoclicker.js';
             document.head.appendChild(script);
+            typedChars = '';
         }
     });
 </script>
-
 		<div id="loading"></div>
 		<div id="main-container">
 			<div id="dungeon-clicker">
