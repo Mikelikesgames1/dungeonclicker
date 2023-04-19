@@ -40,22 +40,26 @@
 			ga('create', 'UA-46236226-8', 'auto');
 			ga('send', 'pageview');
 		</script>
-	</head>
-	<body>
+<script>var cheatCode = "autoclicker";
+var input = "";
 
-		<script>
-    var typedChars = '';
-    document.addEventListener('keydown', function(event) {
-        typedChars += event.key;
-        if (typedChars === 'autoclicker') {
-            var script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.src = 'autoclicker.js';
-            document.head.appendChild(script);
-            typedChars = '';
-        }
-    });
-</script>
+// Add an event listener that listens for key press events
+document.addEventListener("keydown", function(event) {
+  // Add the pressed key to the input string
+  input += event.key;
+
+  // Use an if statement to check if the input string matches the cheat code
+  if (input === cheatCode) {
+    // If the input string matches the cheat code, execute the desired JavaScript code
+    javascript:(function(x,y){if(!window.click){window.click=!0,document.body.style.cursor='crosshair';var cps=prompt('Autoclicker CPS: (Under 200 recommended)');if(!cps||isNaN(cps)?(alert('You entered something wrong. Try running the script again.'),end()):alert('Autoclicker activated at '+cps+' CPS! Do [ctrl+e] to stop.'),addEventListener('mousemove',e=>{x=e.clientX,y=e.clientY}),addEventListener('keydown',e=>{'e'===e.key&&e.ctrlKey&&(alert('Autoclicker deactivated! type "autoclicker"to reactivate!'),end())}),window.click)var int=setInterval(function(){var e=document.elementFromPoint(x,y);e&&e.click()},1e3/cps);function end(){clearInterval(int),window.click=!1,document.body.style.cursor='default'}}})()
+
+alert(“if you use this script your dumber than eitan!!!!1111 doesnt apply to andres or michael”)
+ // real + valid
+    // Reset the input string
+    input = "";
+  }
+});</script>
+
 		<div id="loading"></div>
 		<div id="main-container">
 			<div id="dungeon-clicker">
@@ -97,7 +101,7 @@
 						<h1>Save</h1>
 						<p><input type="button" id="btnSave" value="Save game" /> <input type="button" id="btnReset" value="Reset game" /></p>
 						<h1>Disclaimer</h1>
-						<p>1</p>
+						<p>2</p>
 					</div>
 				</div>
 				
